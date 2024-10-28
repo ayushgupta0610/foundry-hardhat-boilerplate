@@ -9,26 +9,23 @@ const config: HardhatUserConfig = {
       loggingEnabled: true,
     },
     // ethereum: {
-    //   url: `${process.env.ETHEREUM_RPC_URL}`,
+    //   url: `${process.env.ETHEREUM_RPC_URL}`, // Your Ethereum RPC URL
     //   accounts: [`${process.env.PRIVATE_KEY}`], // Your private key
     // },
   },
   solidity: {
     compilers: [
       {
-        version: "0.7.1",
-      },
-      {
-        version: "0.8.26",
+        version: "0.8.26", // Recommended version
       },
     ],
   },
-  // paths: {
-  //   sources: "./contracts",
-  //   tests: "./test",
-  //   cache: "./cache",
-  //   artifacts: "./artifacts",
-  // },
+  paths: {
+    sources: "./contracts", // Path to your smart contracts
+    tests: "./test", // Path to your test files
+    cache: "./cache", // Path to cache files
+    artifacts: "./artifacts", // Path to compiled artifacts
+  },
 };
 
 export default config;

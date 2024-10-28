@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "install": "npm i --force",
-    "deploy": "npx hardhat run script/deploy.ts",
+    "deploy": "npx hardhat run script/Counter.ts",
     "hardhat-test": "npx hardhat test",
     "compile": "npx hardhat compile && forge build",
     "build": "npx hardhat compile && forge build",
